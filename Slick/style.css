@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro",sans-serif;
+    color: #fff;
+}
+.back{
+    background-image: url("https://prium.github.io/slick/assets/images/header_showcase.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 80vh;
+    background-position: top;
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+}
+.back::before{
+    position: absolute;
+    content: '';
+    background: rgba(0,0,0,.25);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.textHolder{
+    margin: auto;
+    width: 41vw;
+    text-align: center;
+    padding-top: 10rem;
+}
+h1{
+    font-size: 4.76837rem;
+    font-weight: 300;
+    margin-bottom: 1.5rem;
+    line-height: 1;
+}
+strong{
+    font-weight: 700;
+}
+.textHolder p{
+    font-weight: 400;
+    opacity: .75;
+    color: #e1e1e1;
+    font-size: 1.25rem;
+    font-family: 'Open Sans';
+    line-height: 1.45;
+    margin-bottom: 1rem;
+}
+.btnHolder{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 52rem;
+    text-align: center;
+}
+.btn{
+    display: inline;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 0.2rem 0.8rem;
+    margin: 0.5rem;
+    transition: 400ms ease-in-out;
+    opacity: .8;
+    font-size: .8rem;
+    font-weight: 700;
+    line-height: 1.5;
+    border-color: rgba(255, 255, 255, 0.35);
+}
+.btn:hover{
+    background-color: #fff;
+    color: black;
+    transition: 400ms ease-in-out;
+}
+.fundoBranco{
+    background-color: #fff;
+    width: 100%;
+}
+.imgHolder{
+    width: 80vw;
+    text-align: center;
+    margin: auto;
+}
+.imgHolder img{
+    width: 25rem;
+    overflow: hidden;
+    margin: .5rem;
+    border-radius: 5px;
+
+}
+svg{
+    position: relative;
+    bottom: 15vh;
+    z-index: -1;
+}
