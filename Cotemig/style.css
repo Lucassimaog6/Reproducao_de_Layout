@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+header{
+    position: fixed;
+    height: 4em;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(0, 0, 0, .75);
+    color: white;
+}
+#imgHolder>img{
+    height: 40px;
+}
+li{
+    display: inline-block;
+    padding-right: 1.5rem;
+}
+#leftLine{
+    padding: .6rem 1rem;
+    border-left: dashed 1px rgba(255, 255, 255, .6);
+}
+section{
+    max-width: 75em;
+    margin: 0 auto;
+    text-align: center;
+}
+section>h1{
+    font-size: 2.5em;
+    font-weight: 900;
+    padding: 1em .5em 0;
+    text-align: center;
+    color: #111;
+}
+section>p{
+    font-size: 18px;
+    max-width: 700px;
+    margin: 10px auto;
+    text-align: center;
+    color: #424242;
+}
+#cursoHolder{
+    display: block;
+    margin: 50px auto;
+    width: 50vw;
+}
+.curso{
+    overflow: hidden;
+    width: 284px;
+    margin: 0 0.9em 0.5em 0;
+    vertical-align: top;
+    border-radius: 0.75em;
+}
+.curso>img{
+    height: 10rem;
+}
