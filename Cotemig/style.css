@@ -24,6 +24,9 @@ li{
     padding: .6rem 1rem;
     border-left: dashed 1px rgba(255, 255, 255, .6);
 }
+main{
+    overflow-x: hidden;
+}
 section{
     max-width: 75em;
     margin: 0 auto;
@@ -38,15 +41,14 @@ section>h1{
 }
 section>p{
     font-size: 18px;
-    max-width: 700px;
     margin: 10px auto;
     text-align: center;
     color: #424242;
+    padding-bottom: 50px;
 }
 #cursoHolder{
-    display: block;
-    margin: 50px auto;
-    width: 50vw;
+    display: flex;
+    justify-content: center;
 }
 .curso{
     overflow: hidden;
@@ -57,4 +59,24 @@ section>p{
 }
 .curso>img{
     height: 10rem;
+}
+.curso p{
+    font-size: .9rem;
+    font-weight: bold;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.content>img{
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 30%;
+    display: inline-block;
+}
+.fa-angle-right{
+    padding: 10px;
 }
