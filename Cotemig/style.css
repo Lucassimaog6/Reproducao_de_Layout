@@ -67,9 +67,42 @@ main {
 }
 
 #banner {
+    background-image: url(./banner.png);
     height: 530px;
     width: 100%;
-    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 350px;
+    color: white;
+}
+
+#banner h1{
+    font-size: 2.375em;
+    font-weight: 900;
+}
+
+#banner p{
+    margin: 1em 0 0;
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.b{
+    width: 400px;
+    height: 3.5rem;
+    border-radius: 8px;
+    background: #40aa0b;
+    cursor: pointer;
+    margin-top: 3rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.b p{
+    font-size: .875em;
+    font-weight: 700;
+    color: #fff;
 }
 
 section {
@@ -107,9 +140,40 @@ section>p {
     border-radius: 0.75em;
 }
 
-.curso>img {
-    height: 10rem;
+.img{
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: flex-end;
 }
+.img h1{
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1));
+}
+
+.c1 .img{
+    background-image: url(https://cotemig.com.br/static/courseType/desktopimage-1643903692865.jpg);
+}
+
+.c2 .img{
+    background-image: url(https://cotemig.com.br/static/courseType/desktopimage-1621255560657.jpg);
+}
+
+.c3 .img{
+    background-image: url(https://cotemig.com.br/static/courseType/desktopimage-1621252590289.jpg);
+}
+
+.c4 .img{
+    background-image: url(https://cotemig.com.br/assets/img/banner/automacao-residencial-1140.jpg);
+}
+
+.curso>.img{
+    height: 10rem;
+    overflow: hidden;
+}
+
 
 .curso p {
     font-size: .9rem;
@@ -174,7 +238,7 @@ section>p {
     width: 300px;
     text-align: center;
     margin: auto;
-    padding: 50px;
+    padding: 40px;
 }
 .atendimento>p{
     font-size: 1.3rem;
@@ -188,11 +252,19 @@ section>p {
 }
 
 .noticias{
-    width: 300px;
+    width: 500px;
     margin: auto;
     display: flex;
     justify-content: center;
+    padding: 2em 1em;
 }
+
+.noticias h1{
+    font-size: 2.5em;
+    font-weight: 900;
+    color: #111;
+}
+
 #noti{
     display: flex;
     flex-direction: row;
@@ -203,35 +275,121 @@ section>p {
 }
 #noti div{
     width: 23%;
+    height: 300px;
     overflow: hidden;
     border-radius: 15px;
 }
-#noti img{
-    width: 100%;
-    transform: scale(1.1);
-    transition: transform 300ms;
+
+.n{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    color: white;
+}
+.n h3{
+    text-align: left;
+    font-size: 16px;
+    line-height: 23px;
+    padding: 20px;
+    padding-bottom: 5px;
+}
+.n p{
+    padding: 0 20px;
+    padding-bottom: 15px;
+    font-style: italic;
+    font-size: .75em;
 }
 
-#noti img:hover{
-    transform: scale(1.2);
+.n1{
+    background-image: url(https://www.cotemig.com.br/static/blog/mobileimagefull-1653342958410.png);
+    background-size: cover;
+}
+
+.n2{
+    background-image: url(https://www.cotemig.com.br/static/blog/mobileimagefull-1651240942557.png);
+    background-size: cover;
+}
+
+.n3{
+    background-image: url(https://www.cotemig.com.br/static/blog/mobileimagefull-1647277290170.jpg);
+    background-size: cover;
+}
+
+.n4{
+    background-image: url(https://www.cotemig.com.br/static/blog/mobileimagefull-1641562463686.png);
+    background-size: cover;
 }
 
 footer{
     background: #151515;
     color: white;
+    padding: 50px 20vw;
 }
-div.top{
+.top{
     display: flex;
     justify-content: space-around;
 }
 
-div.top h1{
-    font-size: 1.125em;
-    padding: 1rem;
+.top>div{
+    margin: 0 45px;
+    padding: 20px;
+    min-width: max-content;
+    line-height: 2;
 }
 
-div.top p{
+.top h1{
+    font-size: 1.125em;
+}
+
+.top p{
     font-size: .8rem;
     color: #bdbdbd;
-    padding: .5rem;
+    padding: .5rem 0;
+}
+
+.btn{
+    width: 100%;
+    height: 3rem;
+    background: #40aa0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin: 10px;
+}
+hr{
+    margin: 10px;
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom>div>p{
+    margin: 20px;
+}
+
+.sociais img{
+    width: 1.5rem;
+    padding: .6rem 1.6rem;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.fb{
+    background-color: #4460a0;
+}
+.insta{
+    background-color: #fff;
+}
+.linkedin{
+    background-color: #007ab9;
+}
+.twitter{
+    background-color: #00aaec;
 }
